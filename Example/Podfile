@@ -1,0 +1,6 @@
+use_frameworks!
+target 'ffmpeg_kit_full_ios_Tests' do
+  pod 'ffmpeg_kit_full_ios', :path => '../'
+  
+  
+end

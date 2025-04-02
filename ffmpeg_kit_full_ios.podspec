@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ffmpeg_kit_full_ios'
-  s.version          = '0.1.0'
+  s.version          = '6.1'
   s.summary          = 'A short description of ffmpeg_kit_full_ios.'
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,21 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '10.0'
 
-  s.source_files = 'ffmpeg_kit_full_ios/Classes/**/*'
+  s.libraries = ["z", "bz2", "c++", "iconv"]
+
+  s.source = { :git => "https://github.com/yangchanglol/yc_ffmpeg_kit_full_ios.git", :tag => "6.1" }
+
+  s.ios.frameworks = ["AudioToolbox", "AVFoundation", "CoreMedia", "VideoToolbox"]
+  s.ios.vendored_frameworks = [
+    "Frameworks/ffmpegkit.xcframework",
+    "Frameworks/libavcodec.xcframework",
+    "Frameworks/libavdevice.xcframework",
+    "Frameworks/libavfilter.xcframework",
+    "Frameworks/libavformat.xcframework",
+    "Frameworks/libavutil.xcframework",
+    "Frameworks/libswresample.xcframework",
+    "Frameworks/libswscale.xcframework"
+  ]
   
   # s.resource_bundles = {
   #   'ffmpeg_kit_full_ios' => ['ffmpeg_kit_full_ios/Assets/*.png']

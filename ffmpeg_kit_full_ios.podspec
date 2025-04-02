@@ -33,6 +33,9 @@ TODO: Add long description of the pod here.
   s.libraries = ["z", "bz2", "c++", "iconv"]
 
   s.source = { :git => "https://github.com/yangchanglol/yc_ffmpeg_kit_full_ios.git", :tag => "6.1" }
+  s.platform     = :ios, "12.1"
+  s.requires_arc = true
+
 
   s.ios.frameworks = ["AudioToolbox", "AVFoundation", "CoreMedia", "VideoToolbox"]
   s.ios.vendored_frameworks = [

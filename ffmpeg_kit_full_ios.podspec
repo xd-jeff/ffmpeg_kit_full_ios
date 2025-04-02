@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'ffmpeg_kit_full_ios'
+  s.name             = 'ffmpeg_kit_ios_full'
   s.version          = '6.1'
   s.summary          = 'A short description of ffmpeg_kit_full_ios.'
 

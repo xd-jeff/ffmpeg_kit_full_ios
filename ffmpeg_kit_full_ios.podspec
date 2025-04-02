@@ -39,21 +39,21 @@ TODO: Add long description of the pod here.
 
   s.ios.frameworks = ["AudioToolbox", "AVFoundation", "CoreMedia", "VideoToolbox"]
   s.ios.vendored_frameworks = [
-    "Frameworks/ffmpegkit.xcframework",
-    "Frameworks/libavcodec.xcframework",
-    "Frameworks/libavdevice.xcframework",
-    "Frameworks/libavfilter.xcframework",
-    "Frameworks/libavformat.xcframework",
-    "Frameworks/libavutil.xcframework",
-    "Frameworks/libswresample.xcframework",
-    "Frameworks/libswscale.xcframework"
+    "frameworks/ffmpegkit.framework",
+    "frameworks/libavcodec.framework",
+    "frameworks/libavdevice.framework",
+    "frameworks/libavfilter.framework",
+    "frameworks/libavformat.framework",
+    "frameworks/libavutil.framework",
+    "frameworks/libswresample.framework",
+    "frameworks/libswscale.framework"
   ]
   
   # s.resource_bundles = {
   #   'ffmpeg_kit_full_ios' => ['ffmpeg_kit_full_ios/Assets/*.png']
   # }
+  s.source_files     = 'ffmpeg_kit_full_ios/Classes/*.{.h}'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
